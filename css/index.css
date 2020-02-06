@@ -1,1 +1,376 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h1 {
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+}
+.mainImage {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-image: url(a.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+}
+header {
+  height: 160px;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-end;
+}
+header nav {
+  width: 50vw;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 10px;
+}
+header nav #in:hover {
+  border-bottom: 1px solid lightblue;
+}
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fefdfb;
+}
+.mainContainer .infoBlock {
+  height: 60vh;
+  width: 80vw;
+  background-color: #fff;
+  z-index: 200;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+}
+.mainContainer .infoBlock #intro {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+.mainContainer .infoBlock #intro #portrait.leftSide {
+  background-image: url(b.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.mainContainer .infoBlock #intro .leftSide {
+  width: 40%;
+  height: 80%;
+}
+.mainContainer .infoBlock #intro .rightSide {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 60%;
+  height: 80%;
+}
+.mainContainer .infoBlock #intro .bottomSide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  background-color: lightblue;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+}
+.mainContainer .infoBlock #intro .title {
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.mainContainer .infoBlock #intro .titleUnder {
+  width: 100%;
+  height: 30px;
+  font-size: 30px;
+  text-align: left;
+  padding: 0 15px;
+}
+.mainContainer .infoBlock #intro .content {
+  padding: 15px;
+}
+.mainContainer .infoBlock #intro .bottomSide a.bottomLinks {
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+}
+.mainContainer .infoBlock #skills {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+.mainContainer .infoBlock #skills .leftSide {
+  width: 40%;
+  height: 100%;
+}
+.mainContainer .infoBlock #skills .rightSide {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  height: 100%;
+  align-content: center;
+}
+.mainContainer .infoBlock #skills .title {
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.mainContainer .infoBlock #skills .titleUnder {
+  width: 100%;
+  height: 30px;
+  font-size: 30px;
+  text-align: left;
+  padding: 0 15px;
+}
+.mainContainer .infoBlock #skills .content {
+  padding: 15px;
+}
+.mainContainer .infoBlock #skills .rightSide {
+  margin: auto;
+}
+.mainContainer .infoBlock #skills h1.titleUnder {
+  text-align: center;
+}
+.mainContainer .infoBlock #workHis {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+.mainContainer .infoBlock #workHis .leftSide {
+  width: 40%;
+  height: 100%;
+}
+.mainContainer .infoBlock #workHis .rightSide {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  height: 100%;
+  align-content: center;
+}
+.mainContainer .infoBlock #workHis .title {
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.mainContainer .infoBlock #workHis .titleUnder {
+  width: 100%;
+  height: 30px;
+  font-size: 30px;
+  text-align: left;
+  padding: 0 15px;
+}
+.mainContainer .infoBlock #workHis .content {
+  padding: 15px;
+}
+.mainContainer .infoBlock #workHis .rightSide {
+  margin: auto;
+}
+.mainContainer .infoBlock #workHis h1.titleUnder {
+  text-align: center;
+}
+.mainContainer .infoBlock #contact {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+.mainContainer .infoBlock #contact .leftSide {
+  width: 40%;
+  height: 100%;
+}
+.mainContainer .infoBlock #contact .rightSide {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  height: 100%;
+  align-content: center;
+}
+.mainContainer .infoBlock #contact .title {
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.mainContainer .infoBlock #contact .titleUnder {
+  width: 100%;
+  height: 30px;
+  font-size: 30px;
+  text-align: left;
+  padding: 0 15px;
+}
+.mainContainer .infoBlock #contact .content {
+  padding: 15px;
+}
+.mainContainer .infoBlock #contact .rightSide {
+  margin: auto;
+}
+.mainContainer .infoBlock #contact h1.titleUnder {
+  text-align: center;
+}
+/*mixins*/

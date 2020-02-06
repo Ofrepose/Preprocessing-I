@@ -8,12 +8,202 @@
 
   <link rel="stylesheet" href="css/index.css">
 
+  <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <h1>My Resume</h1>
+
+	<div class="mainImage"></div>
+
+	<section class="mainContainer">
+
+		<header>
+
+		<nav>
+
+			<a href="#" class="navLink" id="in">Intro</a>
+
+			<a href="#" class="navLink" id="sk">Skills</a>
+
+			<a href="#" class="navLink" id="wo">Work History</a>
+
+			<a href="#" class="navLink" id="co">Contact</a>
+
+		</nav>
+
+	</header>
+
+	<div class="infoBlock">
+
+		<section id="intro">
+
+			<div class="leftSide" id="portrait"></div>
+			<div class="rightSide">
+				
+				<h2 class='title'>Hi</h2>
+				<h1 class="titleUnder">I'm Daniel Payne</h1>
+				<h3 class="content">
+					I think I would be a good hire because I am a hard worker and blah blah blah lorem epsum and things and other things and other things and other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other things
+				</h3>
+
+			</div>
+			<div class="bottomSide">
+				<a href="#" class="bottomLinks">LikedIn Image</a>
+				<a href="#" class="bottomLinks">Instagram</a>
+				<a href="#" class="bottomLinks">Email</a>
+			</div>
+
+		</section>
+
+		<section id="skills">
+
+				
+				<div class="rightSide">
+				
+				
+				<h1 class="titleUnder">SKILLS</h1>
+				<h3 class="content">
+					I think I would be a good hire because I am a hard worker and blah blah blah lorem epsum and things and other things and other things and other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other things
+				</h3>
+
+			</div>
+
+		</section>
+
+		<section id="workHis">
+
+			<div class="rightSide">
+				
+				
+				<h1 class="titleUnder">WORK HISTORY</h1>
+				<h3 class="content">
+					I think I would be a good hire because I am a hard worker and blah blah blah lorem epsum and things and other things and other things and other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other things
+				</h3>
+
+			</div>
+
+
+		</section>
+
+		<section id="contact">
+
+			<div class="rightSide">
+				
+				
+				<h1 class="titleUnder">CONTACT</h1>
+				<h3 class="content">
+					I think I would be a good hire because I am a hard worker and blah blah blah lorem epsum and things and other things and other things and other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other thingsand other things and other things
+				</h3>
+
+			</div>
+
+
+		</section>
+		
+
+
+	</div>
+
+
+
+	</section>
+
+	
+
 </body>
+
+<script type="text/javascript">
+	
+	var intro = document.getElementById('in');
+
+	var sk = document.getElementById('sk');
+
+	var wo = document.getElementById('wo');
+
+	var co = document.getElementById('co');
+
+
+	$(function(){
+		$("#in").css('border-bottom','2px solid lightblue');
+		$("#skills").hide();
+		$("#workHis").hide();
+		$("#contact").hide();
+
+
+		$("#in").click(function(){
+
+			$("#sk").css('border-bottom','none');
+			$("#wo").css('border-bottom','none');
+			$("#co").css('border-bottom','none');
+
+			$("#in").css('border-bottom','2px solid lightblue');
+
+
+			$("#intro").css('display','flex');
+			$("#skills").css('display','none');
+			$("#workHis").css('display','none');
+			$("#contact").css('display','none');
+		});
+
+		
+		$("#sk").click(function(){
+
+			$("#in").css('border-bottom','none');
+			$("#wo").css('border-bottom','none');
+			$("#co").css('border-bottom','none');
+
+			$("#sk").css('border-bottom','2px solid lightblue');
+
+
+			$("#intro").css('display','none');
+			$("#skills").css('display','flex');
+			$("#workHis").css('display','none');
+			$("#contact").css('display','none');
+		});
+
+		$("#wo").click(function(){
+
+			$("#in").css('border-bottom','none');
+			$("#sk").css('border-bottom','none');
+			$("#co").css('border-bottom','none');
+
+			$("#wo").css('border-bottom','2px solid lightblue');
+
+
+			$("#intro").css('display','none');
+			$("#skills").css('display','none');
+			$("#workHis").css('display','flex');
+			$("#contact").css('display','none');
+		});
+
+		$("#co").click(function(){
+
+			$("#in").css('border-bottom','none');
+			$("#sk").css('border-bottom','none');
+			$("#wo").css('border-bottom','none');
+
+			$("#co").css('border-bottom','2px solid lightblue');
+
+
+			$("#intro").css('display','none');
+			$("#skills").css('display','none');
+			$("#workHis").css('display','none');
+			$("#contact").css('display','flex');
+		});
+
+
+
+	});
+
+
+
+
+
+
+
+</script>
 </html>
