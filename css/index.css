@@ -139,6 +139,7 @@ h1 {
   padding: 15px;
   text-align: center;
 }
+/*//variables*/
 .mainImage {
   position: fixed;
   top: 0;
@@ -175,6 +176,11 @@ header nav a {
 header nav #in:hover {
   border-bottom: 1px solid lightblue;
 }
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+  }
+}
 .mainContainer {
   display: flex;
   flex-wrap: wrap;
@@ -210,12 +216,23 @@ header nav #in:hover {
   width: 40%;
   height: 80%;
 }
+@media (max-width: 500px) {
+  .mainContainer .infoBlock #intro .leftSide {
+    display: none;
+  }
+}
 .mainContainer .infoBlock #intro .rightSide {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   width: 60%;
   height: 80%;
+}
+@media (max-width: 500px) {
+  .mainContainer .infoBlock #intro .rightSide {
+    width: 90%;
+    margin: auto;
+  }
 }
 .mainContainer .infoBlock #intro .bottomSide {
   display: flex;
@@ -250,7 +267,13 @@ header nav #in:hover {
   font-size: 15px;
   text-decoration: none;
 }
+.mainContainer .infoBlock #intro .rightSide h3.content {
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 2px;
+  font-size: 15px;
+}
 .mainContainer .infoBlock #skills {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   height: 100%;
@@ -265,6 +288,7 @@ header nav #in:hover {
   flex-wrap: wrap;
   width: 60%;
   height: 100%;
+  justify-content: center;
   align-content: center;
 }
 .mainContainer .infoBlock #skills .title {
@@ -285,11 +309,14 @@ header nav #in:hover {
 .mainContainer .infoBlock #skills .content {
   padding: 15px;
 }
-.mainContainer .infoBlock #skills .rightSide {
-  margin: auto;
-}
 .mainContainer .infoBlock #skills h1.titleUnder {
   text-align: center;
+}
+.mainContainer .infoBlock #skills h3.content1 {
+  color: blue;
+}
+.mainContainer .infoBlock #skills .middleItems {
+  margin: auto;
 }
 .mainContainer .infoBlock #workHis {
   display: flex;
@@ -306,6 +333,7 @@ header nav #in:hover {
   flex-wrap: wrap;
   width: 60%;
   height: 100%;
+  justify-content: center;
   align-content: center;
 }
 .mainContainer .infoBlock #workHis .title {
@@ -347,6 +375,7 @@ header nav #in:hover {
   flex-wrap: wrap;
   width: 60%;
   height: 100%;
+  justify-content: center;
   align-content: center;
 }
 .mainContainer .infoBlock #contact .title {
@@ -372,5 +401,11 @@ header nav #in:hover {
 }
 .mainContainer .infoBlock #contact h1.titleUnder {
   text-align: center;
+}
+@media (max-width: 500px) {
+  .mainContainer .infoBlock {
+    width: 100%;
+    height: 70%;
+  }
 }
 /*mixins*/
